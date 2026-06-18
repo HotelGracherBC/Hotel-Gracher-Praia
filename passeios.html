@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Passeios Recomendados - Hotel Gracher</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+*{box-sizing:border-box}:root{--azul:#061b52;--laranja:#bf6338;--linha:#dfc6bb}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f2ece7;color:var(--azul);display:flex;justify-content:center}
+.page{width:100%;max-width:430px;min-height:100vh;background:radial-gradient(circle at center,#fff 0%,#fbf7f2 72%,#f2e8df 100%);padding:18px 24px 28px}
+.btn-voltar{position:fixed;top:12px;left:12px;z-index:999;background:var(--azul);color:#fff;border:none;border-radius:22px;padding:9px 14px;font-size:12px;font-weight:bold;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.22)}
+.header{text-align:center;padding-top:28px;margin-bottom:14px}.waves{width:68px;margin:0 auto 10px}
+.header h1{margin:0;letter-spacing:8px;font-size:24px;font-weight:500}.header h2{margin:9px 0 7px;color:var(--laranja);letter-spacing:4px;font-size:15px;font-weight:700}
+.divider{display:flex;align-items:center;gap:10px;margin:7px auto 8px}.divider:before,.divider:after{content:"";flex:1;height:1px;background:#cfaa99}.diamond{width:10px;height:10px;background:var(--laranja);transform:rotate(45deg)}
+
+
+
+
+.item{display:grid;grid-template-columns:58px 1fr;gap:12px;padding:11px 0;border-bottom:1px solid var(--linha)}
+.logo-circle{width:52px;height:52px;border:1.8px solid var(--laranja);border-radius:50%;color:var(--laranja);display:flex;align-items:center;justify-content:center;background:#fffaf7;font-size:23px}
+.info h3{margin:0 0 4px;color:var(--azul);font-size:16px;font-weight:800}.info h3 a{color:var(--azul);text-decoration:none}.info h3 a:hover{text-decoration:underline}
+.info p{margin:0;font-size:12.5px;line-height:1.28}.info p.pt{color:#111;font-weight:bold}.info p.es{color:#555;margin-top:4px}
+@media(max-width:380px){.page{padding-left:18px;padding-right:18px}.header h1{font-size:21px;letter-spacing:6px}.header h2{font-size:13px;letter-spacing:3px}.item{grid-template-columns:52px 1fr;gap:10px;padding:9px 0}.logo-circle{width:48px;height:48px;font-size:20px}.info h3{font-size:14px}.info p{font-size:11.2px}}
+</style>
+<style id="passeios-sem-faixa-ajuste">
+section{
+  margin-top:8px !important;
+}
+.item:first-child{
+  border-top:1px solid var(--linha);
+}
+</style>
+
+</head>
+<body><button class="btn-voltar" onclick="history.back()">← VOLTAR</button>
+<main class="page"><header class="header">
+<svg class="waves" viewBox="0 0 120 40" fill="none" stroke="#061b52" stroke-width="5" stroke-linecap="round"><path d="M5 8 C20 0 35 16 50 8 C65 0 80 16 95 8 C105 3 112 4 116 6"/><path d="M5 20 C20 12 35 28 50 20 C65 12 80 28 95 20 C105 15 112 16 116 18"/><path d="M5 32 C20 24 35 40 50 32 C65 24 80 40 95 32 C105 27 112 28 116 30"/></svg>
+<h1>HOTEL GRACHER</h1><h2>PASSEIOS RECOMENDADOS</h2><div class="divider"><div></div><div class="diamond"></div><div></div></div></header>
+<section>
+
+<div style="text-align:center;margin:10px 10px 18px 10px;line-height:1.4;">
+  <div style="color:#bf6338;font-weight:bold;font-size:14px;">
+    Alguns vendemos ingressos no hotel para facilitar a vida dos hóspedes.
+  </div>
+  <div style="color:#666;font-size:13px;margin-top:4px;">
+    Algunos vendemos entradas en el hotel para facilitar la vida de los huéspedes.
+  </div>
+</div>
+
+<div class="item">
+<div class="logo-circle"><i class="fa-solid fa-cable-car"></i></div><div class="info"><h3><a href="https://www.instagram.com/unipraias/" target="_blank" rel="noopener">@unipraias</a></h3><p class="pt">Um parque com teleférico e atrações de tirar o fôlego.</p><p class="es">Un parque con teleférico y atracciones que quitan el aliento.</p></div></div>
+<div class="item"><div class="logo-circle"><i class="fa-solid fa-fish"></i></div><div class="info"><h3><a href="https://www.instagram.com/oceanicaquarium/" target="_blank" rel="noopener">@oceanicaquarium</a></h3><p class="pt">Aquário renomado da nossa região.</p><p class="es">Acuario reconocido de nuestra región.</p></div></div>
+<div class="item"><div class="logo-circle"><i class="fa-solid fa-dragon"></i></div><div class="info"><h3><a href="https://www.instagram.com/aventurajurassicaoficial/" target="_blank" rel="noopener">@aventurajurassicaoficial</a></h3><p class="pt">Um parque dos dinossauros imersivo e adrenalizante.</p><p class="es">Un parque de dinosaurios inmersivo y emocionante.</p></div></div>
+<div class="item"><div class="logo-circle"><i class="fa-regular fa-circle"></i></div><div class="info"><h3><a href="https://www.instagram.com/roda.fg/" target="_blank" rel="noopener">@roda.fg</a></h3><p class="pt">A roda gigante mais famosa do Brasil.</p><p class="es">La rueda gigante más famosa de Brasil.</p></div></div>
+</section></main></body></html>
