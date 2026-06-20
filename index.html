@@ -295,7 +295,6 @@ body{
     font-size:130% !important;
 }
 </style>
-
 <style id="social-grid-fix">
 .grid .card{
   width:auto !important;
@@ -306,9 +305,6 @@ body{
   margin-bottom:4px !important;
 }
 </style>
-
-
-
 <style id="index-refatorado-sem-corte">
 /* Mantém o cabeçalho inteiro, sem cortar nenhuma frase */
 html, body{
@@ -446,7 +442,146 @@ html, body{
   }
 }
 </style>
+<style id="layout-maior-com-rolagem">
+/* Versão maior e mais confortável, permitindo rolagem no celular */
+.container{
+  max-width:430px !important;
+  min-height:100dvh !important;
+  overflow:visible !important;
+}
 
+.content{
+  padding:12px 22px 28px !important;
+}
+
+.btn-main{
+  height:68px !important;
+  border-radius:17px !important;
+  gap:14px !important;
+  padding:0 18px !important;
+}
+.btn-main i{
+  font-size:40px !important;
+}
+.btn-main b{
+  font-size:18px !important;
+}
+.btn-main span{
+  font-size:13px !important;
+}
+.arrow{
+  font-size:22px !important;
+}
+
+.grid{
+  gap:12px !important;
+  margin-top:13px !important;
+}
+
+.card{
+  height:108px !important;
+  border-radius:16px !important;
+  padding:8px !important;
+}
+
+.card i{
+  font-size:32px !important;
+  margin-bottom:7px !important;
+}
+
+.card b{
+  font-size:14.5px !important;
+  line-height:1.15 !important;
+}
+
+.card span{
+  font-size:11.5px !important;
+  margin-top:5px !important;
+  line-height:1.2 !important;
+}
+
+.dicas b{
+  font-size:11.5px !important;
+  line-height:1.1 !important;
+}
+
+.dicas span{
+  font-size:10.5px !important;
+}
+
+.row{
+  height:58px !important;
+  border-radius:16px !important;
+  gap:14px !important;
+  padding:0 17px !important;
+  margin-top:10px !important;
+}
+
+.row i:first-child{
+  font-size:29px !important;
+  width:34px !important;
+}
+
+.row b{
+  font-size:15.5px !important;
+  line-height:1.15 !important;
+}
+
+.row span{
+  font-size:11.5px !important;
+  margin-top:2px !important;
+  line-height:1.15 !important;
+}
+
+.footer{
+  margin-top:16px !important;
+  font-size:14px !important;
+  line-height:1.2 !important;
+}
+
+.stars{
+  font-size:17px !important;
+  margin-bottom:5px !important;
+  letter-spacing:6px !important;
+}
+
+.address{
+  margin:18px -22px -28px !important;
+  padding:24px 22px 18px !important;
+  font-size:12px !important;
+  line-height:1.3 !important;
+  gap:10px !important;
+}
+
+.address i{
+  font-size:28px !important;
+}
+
+/* Celulares pequenos ainda ficam legíveis */
+@media(max-width:380px){
+  .content{
+    padding:10px 18px 24px !important;
+  }
+  .card{
+    height:100px !important;
+  }
+  .card b{
+    font-size:13px !important;
+  }
+  .card span{
+    font-size:10.5px !important;
+  }
+  .row{
+    height:54px !important;
+  }
+  .row b{
+    font-size:14px !important;
+  }
+  .row span{
+    font-size:10.5px !important;
+  }
+}
+</style>
 </head>
 <body>
 <div class="container">
@@ -461,20 +596,17 @@ html, body{
 <i class="fa-solid fa-chevron-right arrow"></i>
 </a>
 <div class="grid">
-
-<a class="card" target="_blank" rel="noopener" href="horarios.html">
-  <i class="fa-brands fa-instagram instagram"></i>
-  <b>INSTAGRAM</b>
-  <span>Acompanhe nossas novidades</span>
+<a class="card" href="https://www.instagram.com/hotelgracher/" rel="noopener" target="_blank">
+<i class="fa-brands fa-instagram instagram"></i>
+<b>INSTAGRAM</b>
+<span>Acompanhe nossas novidades</span>
 </a>
-
-<a class="card" href="https://www.tiktok.com/@hotelgracherpraia" target="_blank" rel="noopener">
-  <i class="fa-brands fa-tiktok"></i>
-  <b>TIKTOK</b>
-  <span>Veja nossos vídeos</span>
+<a class="card" href="https://www.tiktok.com/@hotelgracherpraia" rel="noopener" target="_blank">
+<i class="fa-brands fa-tiktok"></i>
+<b>TIKTOK</b>
+<span>Veja nossos vídeos</span>
 </a>
-
-<a class="card" href="https://maps.google.com/?q=-27.000364,-48.624563" rel="noopener" target="_blank">
+<a class="card" href="https://www.google.com/maps/search/?api=1&amp;query=Hotel+Gracher+Praia,+Avenida+Brasil+3300,+Centro,+Balneario+Camboriu+-+SC" rel="noopener" target="_blank">
 <i class="fa-solid fa-location-dot"></i>
 <b>COMO CHEGAR</b>
 <span>Hotel Gracher Praia<br/>Balneário Camboriú - SC</span>
@@ -484,14 +616,14 @@ html, body{
 <b>DICAS GASTRONÔMICAS<br/>E PASSEIOS</b>
 <span>Sugestões especiais para<br/>aproveitar a região</span>
 </a>
-</div>
+</div><a class="row" href="https://www.hotelgracher.com.br/" rel="noopener" target="_blank"><i class="fa-solid fa-gift"></i><div><b>BENEFÍCIOS EXCLUSIVOS</b><span>Conheça as vantagens de reservar diretamente conosco</span></div><i class="fa-solid fa-chevron-right arrow"></i></a>
 <a class="row" href="https://hotel-gracher-contato.reservashotelgracher.workers.dev/">
-  <i class="fa-regular fa-address-card"></i>
-  <div>
-    <b>SALVAR CONTATO</b>
-    <span>Adicionar contato do hotel no celular</span>
-  </div>
-  <i class="fa-solid fa-chevron-right arrow"></i>
+<i class="fa-regular fa-address-card"></i>
+<div>
+<b>SALVAR CONTATO</b>
+<span>Adicionar contato do hotel no celular</span>
+</div>
+<i class="fa-solid fa-chevron-right arrow"></i>
 </a>
 <div class="row" onclick="abrirWifi()">
 <i class="fa-solid fa-wifi"></i>
@@ -645,36 +777,7 @@ function fecharHorariosImagem(){
   document.getElementById('popupHorariosImagem').style.display='none';
 }
 </script>
-<div id="mapModal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:9999;align-items:center;justify-content:center;">
-<div style="background:#fff;border-radius:16px;padding:20px;max-width:320px;width:90%;text-align:center;font-family:Arial,sans-serif;">
-<h3 style="margin-top:0;color:#0b2559;">Como deseja navegar?</h3>
-<p style="color:#666;font-size:14px;">Escolha o aplicativo de navegação.</p>
-<a href="https://www.google.com/maps/search/?api=1&amp;query=-27.000364,-48.624563" style="display:block;margin:12px 0;padding:12px;border-radius:10px;background:#4285F4;color:#fff;text-decoration:none;font-weight:bold;">
-       📍 Abrir no Google Maps
-    </a>
-<a href="https://waze.com/ul?ll=-27.000364,-48.624563&amp;navigate=yes" style="display:block;margin:12px 0;padding:12px;border-radius:10px;background:#33CCFF;color:#fff;text-decoration:none;font-weight:bold;">
-       🚗 Abrir no Waze
-    </a>
-<button onclick="document.getElementById('mapModal').style.display='none'" style="margin-top:10px;padding:10px 20px;border:none;border-radius:8px;background:#ddd;cursor:pointer;">
-      Fechar
-    </button>
 </div>
-</div>
-<script>
-document.addEventListener('DOMContentLoaded',function(){
-  document.querySelectorAll('a').forEach(function(a){
-    if(a.textContent.toUpperCase().includes('COMO CHEGAR')){
-      a.removeAttribute('href');
-      a.onclick=function(e){
-        e.preventDefault();
-        document.getElementById('mapModal').style.display='flex';
-      };
-    }
-  });
-});
-</script>
-</div>
-
 <script>
 document.addEventListener('DOMContentLoaded',()=>{
  document.querySelectorAll('a.card').forEach(a=>{
@@ -685,6 +788,5 @@ document.addEventListener('DOMContentLoaded',()=>{
  });
 });
 </script>
-
 </body>
 </html>
