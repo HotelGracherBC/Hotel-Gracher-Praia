@@ -231,54 +231,6 @@ body{
   font-size:11px !important;
 }
 </style>
-<style id="stars-simple">
-.stars{
-  color:#061b52 !important;
-  background:none !important;
-  -webkit-background-clip:initial !important;
-  background-clip:initial !important;
-  text-shadow:none !important;
-  animation:none !important;
-  letter-spacing:6px;
-}
-</style>
-<style id="footer-real-wave-fix">
-.address{
-    background:#d58b63 !important;
-    margin:10px -18px -20px !important;
-    padding:18px 20px 12px !important;
-    display:flex !important;
-    align-items:center !important;
-    gap:10px !important;
-    text-align:left !important;
-    position:relative !important;
-    overflow:visible !important;
-    border-radius:0 !important;
-}
-
-.address::before{
-    content:'' !important;
-    position:absolute !important;
-    left:0 !important;
-    top:-11px !important;
-    width:100% !important;
-    height:12px !important;
-    background-repeat:no-repeat !important;
-    background-size:100% 100% !important;
-    background-position:bottom center !important;
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 430 14' preserveAspectRatio='none'%3E%3Cpath fill='%23d58b63' d='M0 8 C80 4 150 11 220 8 C300 4 360 2 430 6 L430 14 L0 14 Z'/%3E%3C/svg%3E") !important;
-    z-index:1 !important;
-}
-
-.address > *{
-    position:relative !important;
-    z-index:2 !important;
-}
-
-.footer{
-    margin-bottom:0 !important;
-}
-</style>
 <style id="facebook-layout-fix">
 .card.full{
   grid-column:1 / span 2;
@@ -442,73 +394,40 @@ html, body{
   }
 }
 </style>
-<style id="layout-maior-com-rolagem">
-/* Versão maior e mais confortável, permitindo rolagem no celular */
+<style id="index-final-v1">
+/* Versão final do index - mantém layout grande, com rolagem e rodapé redesenhado */
 .container{
   max-width:430px !important;
   min-height:100dvh !important;
   overflow:visible !important;
 }
-
 .content{
-  padding:12px 22px 28px !important;
+  padding:12px 22px 0 !important;
 }
-
 .btn-main{
   height:68px !important;
   border-radius:17px !important;
   gap:14px !important;
   padding:0 18px !important;
 }
-.btn-main i{
-  font-size:40px !important;
-}
-.btn-main b{
-  font-size:18px !important;
-}
-.btn-main span{
-  font-size:13px !important;
-}
-.arrow{
-  font-size:22px !important;
-}
-
+.btn-main i{font-size:40px !important}
+.btn-main b{font-size:18px !important}
+.btn-main span{font-size:13px !important}
+.arrow{font-size:22px !important;margin-left:auto !important}
 .grid{
   gap:12px !important;
   margin-top:13px !important;
 }
-
 .card{
   height:108px !important;
   border-radius:16px !important;
   padding:8px !important;
 }
-
-.card i{
-  font-size:32px !important;
-  margin-bottom:7px !important;
-}
-
-.card b{
-  font-size:14.5px !important;
-  line-height:1.15 !important;
-}
-
-.card span{
-  font-size:11.5px !important;
-  margin-top:5px !important;
-  line-height:1.2 !important;
-}
-
-.dicas b{
-  font-size:11.5px !important;
-  line-height:1.1 !important;
-}
-
-.dicas span{
-  font-size:10.5px !important;
-}
-
+.card i{font-size:32px !important;margin-bottom:7px !important}
+.card b{font-size:14.5px !important;line-height:1.15 !important}
+.card span{font-size:11.5px !important;margin-top:5px !important;line-height:1.2 !important}
+.dicas b{font-size:11.5px !important;line-height:1.1 !important}
+.dicas span{font-size:10.5px !important}
 .row{
   height:58px !important;
   border-radius:16px !important;
@@ -516,72 +435,156 @@ html, body{
   padding:0 17px !important;
   margin-top:10px !important;
 }
-
 .row i:first-child{
   font-size:29px !important;
   width:34px !important;
+  text-align:center !important;
 }
+.row b{font-size:15.5px !important;line-height:1.15 !important}
+.row span{font-size:11.5px !important;margin-top:2px !important;line-height:1.15 !important}
 
-.row b{
-  font-size:15.5px !important;
-  line-height:1.15 !important;
+/* Rodapé final fiel ao padrão da arte */
+.final-footer{
+  margin:18px -22px 0 !important;
+  text-align:center !important;
+  color:#061b52 !important;
+  font-family:Arial, Helvetica, sans-serif !important;
+  background:#fbf7f2 !important;
 }
-
-.row span{
-  font-size:11.5px !important;
-  margin-top:2px !important;
-  line-height:1.15 !important;
-}
-
-.footer{
-  margin-top:16px !important;
-  font-size:14px !important;
-  line-height:1.2 !important;
-}
-
-.stars{
-  font-size:17px !important;
-  margin-bottom:5px !important;
-  letter-spacing:6px !important;
-}
-
-.address{
-  margin:18px -22px -28px !important;
-  padding:24px 22px 18px !important;
-  font-size:12px !important;
-  line-height:1.3 !important;
-  gap:10px !important;
-}
-
-.address i{
+.final-stars{
+  color:#c7774d !important;
   font-size:28px !important;
+  line-height:1 !important;
+  letter-spacing:8px !important;
+  font-weight:700 !important;
+  margin:0 0 8px !important;
 }
-
-/* Celulares pequenos ainda ficam legíveis */
+.final-title{
+  font-size:23px !important;
+  line-height:1 !important;
+  letter-spacing:2.5px !important;
+  font-weight:600 !important;
+  margin:0 0 8px !important;
+}
+.final-wave{
+  position:relative !important;
+  min-height:142px !important;
+  padding:40px 28px 18px !important;
+  display:grid !important;
+  grid-template-columns:58px 1fr 86px !important;
+  align-items:center !important;
+  gap:14px !important;
+  background:#d58b63 !important;
+  overflow:hidden !important;
+}
+.final-wave::before{
+  content:"" !important;
+  position:absolute !important;
+  left:-4% !important;
+  top:-1px !important;
+  width:108% !important;
+  height:47px !important;
+  background:#fbf7f2 !important;
+  border-bottom-left-radius:52% 34px !important;
+  border-bottom-right-radius:52% 34px !important;
+  z-index:0 !important;
+}
+.final-wave > *{
+  position:relative !important;
+  z-index:1 !important;
+}
+.final-pin i{
+  font-size:56px !important;
+  color:#061b52 !important;
+}
+.final-address{
+  text-align:left !important;
+  font-size:21px !important;
+  line-height:1.25 !important;
+  font-weight:700 !important;
+  color:#061b52 !important;
+}
+.final-hotel-icon svg{
+  width:86px !important;
+  height:auto !important;
+  display:block !important;
+}
 @media(max-width:380px){
-  .content{
-    padding:10px 18px 24px !important;
+  .content{padding:10px 18px 0 !important}
+  .card{height:100px !important}
+  .card b{font-size:13px !important}
+  .card span{font-size:10.5px !important}
+  .row{height:54px !important}
+  .row b{font-size:14px !important}
+  .row span{font-size:10.5px !important}
+  .final-footer{margin-left:-18px !important;margin-right:-18px !important}
+  .final-stars{font-size:24px !important;letter-spacing:7px !important}
+  .final-title{font-size:19px !important}
+  .final-wave{
+    min-height:126px !important;
+    padding:36px 18px 14px !important;
+    grid-template-columns:46px 1fr 70px !important;
+    gap:10px !important;
   }
-  .card{
-    height:100px !important;
-  }
-  .card b{
-    font-size:13px !important;
-  }
-  .card span{
-    font-size:10.5px !important;
-  }
-  .row{
-    height:54px !important;
-  }
-  .row b{
-    font-size:14px !important;
-  }
-  .row span{
-    font-size:10.5px !important;
-  }
+  .final-pin i{font-size:48px !important}
+  .final-address{font-size:17px !important}
+  .final-hotel-icon svg{width:70px !important}
 }
 </style>
+
+
+<style id="footer-ref-final-css">
+.footer-svg-gracher{
+  margin:10px -22px 0 !important;
+  width:calc(100% + 44px) !important;
+  line-height:0 !important;
+  background:#fbf7f2 !important;
+  overflow:hidden !important;
+}
+.footer-svg-gracher .footer-bg{
+  display:block !important;
+  width:100% !important;
+  height:auto !important;
+  max-height:125px !important;
+}
+.footer-ref-stars{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:15px;
+  font-weight:700;
+  letter-spacing:4px;
+  fill:#061b52;
+}
+.footer-ref-msg{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:11px;
+  font-weight:400;
+  fill:#061b52;
+}
+.footer-ref-address{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:12px;
+  font-weight:500;
+  fill:#061b52;
+}
+.footer-ref-pin{
+  fill:none;
+  stroke:#061b52;
+  stroke-width:6;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+@media(max-width:380px){
+  .footer-svg-gracher{
+    margin-left:-18px !important;
+    margin-right:-18px !important;
+    width:calc(100% + 36px) !important;
+  }
+  .footer-ref-stars{font-size:13px;letter-spacing:3px;}
+  .footer-ref-msg{font-size:12.5px;}
+  .footer-ref-address{font-size:10.5px;}
+}
+</style>
+
 </head>
 <body>
 <div class="container">
@@ -616,7 +619,7 @@ html, body{
 <b>DICAS GASTRONÔMICAS<br/>E PASSEIOS</b>
 <span>Sugestões especiais para<br/>aproveitar a região</span>
 </a>
-</div><a class="row" href="https://www.hotelgracher.com.br/" rel="noopener" target="_blank"><i class="fa-solid fa-gift"></i><div><b>BENEFÍCIOS EXCLUSIVOS</b><span>Conheça as vantagens de reservar diretamente conosco</span></div><i class="fa-solid fa-chevron-right arrow"></i></a>
+</div><a class="row" href="https://www.hotelgracher.com.br/" rel="noopener" target="_blank"><i class="fa-solid fa-gift"></i><div><b>BENEFÍCIOS EXCLUSIVOS</b><span>Vantagens reservando diretamente conosco</span></div><i class="fa-solid fa-chevron-right arrow"></i></a>
 <a class="row" href="https://hotel-gracher-contato.reservashotelgracher.workers.dev/">
 <i class="fa-regular fa-address-card"></i>
 <div>
@@ -651,18 +654,46 @@ html, body{
 </div>
 <i class="fa-solid fa-chevron-right arrow"></i>
 </a>
-<div class="footer">
-<div class="stars">★ ★ ★</div>
-      Obrigado por escolher o<br/>Hotel Gracher Praia!
-    </div>
-<div class="address">
-<i class="fa-solid fa-location-dot"></i>
-<div>
-        Av. Brasil, 3300, Esquina Rua, 3300<br/>
-        Balneário Camboriú - SC<br/>
-        CEP 88.330‑063
-      </div>
-</div>
+
+
+<section class="footer-svg-gracher">
+  <svg viewBox="0 0 430 125" preserveAspectRatio="none" class="footer-bg" aria-label="Rodapé Hotel Gracher">
+    <defs>
+      <linearGradient id="gracherOrangeRef" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#d8956f"/>
+        <stop offset="100%" stop-color="#cf7f51"/>
+      </linearGradient>
+    </defs>
+
+    <rect x="0" y="0" width="430" height="125" fill="#fbf7f2"/>
+
+    <!-- onda laranja inferior no padrão da referência -->
+    <path d="M0 48
+             C58 30, 122 38, 178 55
+             C244 75, 296 66, 350 28
+             C382 7, 407 0, 430 0
+             L430 125 L0 125 Z"
+          fill="url(#gracherOrangeRef)"/>
+
+    <text x="215" y="15" text-anchor="middle" class="footer-ref-stars">★ ★ ★</text>
+    <text x="215" y="32" text-anchor="middle" class="footer-ref-msg">
+      <tspan x="215" dy="0">Obrigado por escolher o</tspan>
+      <tspan x="215" dy="18">Hotel Gracher!</tspan>
+    </text>
+
+    <!-- ícone localização menor -->
+    <g class="footer-ref-pin" transform="translate(92 78) scale(0.26)">
+      <path d="M38 0C17 0 0 17 0 38c0 28 38 76 38 76s38-48 38-76C76 17 59 0 38 0z"/>
+      <circle cx="38" cy="38" r="14"/>
+    </g>
+
+    <!-- endereço no padrão da referência -->
+    <text x="124" y="87" class="footer-ref-address">
+      <tspan x="124" dy="0">Avenida Brasil, 3300 - Centro</tspan>
+      <tspan x="124" dy="19">Balneário Camboriú/SC - 88330-063</tspan>
+    </text>
+  </svg>
+</section>
 </div>
 <div id="popup">
 <div class="popup-box">
