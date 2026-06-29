@@ -333,7 +333,7 @@ Descubre los mejores restaurantes, playas y atracciones para disfrutar al máxim
 
 
   <section class="menu">
-    <a class="menu-btn orange" href="restaurantes.html">
+    <a href="./Guia_Gastronomico_Familia_Gracher.pdf" target="_blank" rel="noopener noreferrer" class="menu-btn orange">
       <div class="icon"><i class="fa-solid fa-utensils"></i></div>
       <div class="text">
         <b>RESTAURANTES FAVORITOS</b>
@@ -341,7 +341,7 @@ Descubre los mejores restaurantes, playas y atracciones para disfrutar al máxim
       <i class="fa-solid fa-chevron-right arrow"></i>
     </a>
 
-    <a class="menu-btn orange" href="praias.html">
+    <a class="menu-btn orange">
       <div class="icon"><i class="fa-solid fa-umbrella-beach"></i></div>
       <div class="text">
         <b>MELHORES PRAIAS</b>
@@ -349,7 +349,7 @@ Descubre los mejores restaurantes, playas y atracciones para disfrutar al máxim
       <i class="fa-solid fa-chevron-right arrow"></i>
     </a>
 
-    <a class="menu-btn orange" href="passeios.html">
+    <a class="menu-btn orange">
       <div class="icon"><i class="fa-solid fa-camera"></i></div>
       <div class="text">
         <b>PASSEIOS RECOMENDADOS</b>
@@ -358,7 +358,7 @@ Descubre los mejores restaurantes, playas y atracciones para disfrutar al máxim
       <i class="fa-solid fa-chevron-right arrow"></i>
     </a>
 
-    <a class="menu-btn note" href="dica-familia-gracher.html">
+    <a class="menu-btn note">
       <div class="icon"><i class="fa-regular fa-heart"></i></div>
       <div class="text">
         <b>DICA DA FAMÍLIA GRACHER</b>
@@ -376,34 +376,29 @@ Descubre los mejores restaurantes, playas y atracciones para disfrutar al máxim
 
 <script id="familia-gracher-pdf">
 document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('a, .menu-btn').forEach(function (el) {
-    var t = (el.innerText || el.textContent || '').toLowerCase();
+  document.querySelectorAll('a, button, .menu-btn, div').forEach(function (el) {
+    var texto = (el.innerText || el.textContent || '').toLowerCase();
 
-    if (t.includes('dicas da família gracher') || t.includes('dicas da familia gracher')) {
-
+    if (texto.includes('família gracher') || texto.includes('familia gracher')) {
       if (el.tagName.toLowerCase() === 'a') {
-        el.href = './Guia_Gastronomico_Familia_Gracher.pdf';
-        el.target = '_blank';
-        el.rel = 'noopener noreferrer';
-
-        el.onclick = function (e) {
+        el.setAttribute('href', './Guia_Gastronomico_Familia_Gracher.pdf');
+        el.setAttribute('target', '_blank');
+        el.setAttribute('rel', 'noopener noreferrer');
+        el.onclick = function(e) {
           e.stopPropagation();
           return true;
         };
-
       } else {
-
         el.style.cursor = 'pointer';
-
-        el.onclick = function (e) {
-          e.preventDefault();
-          e.stopPropagation();
+        el.onclick = function(e) {
+          if (e) {
+            e.preventDefault();
+            e.stopPropagation();
+          }
           window.open('./Guia_Gastronomico_Familia_Gracher.pdf', '_blank');
           return false;
         };
-
       }
-
     }
   });
 });
