@@ -376,29 +376,35 @@ Descubre los mejores restaurantes, playas y atracciones para disfrutar al máxim
 
 <script id="familia-gracher-pdf">
 document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('a, button, .menu-btn, div').forEach(function (el) {
+  document.querySelectorAll('a.menu-btn').forEach(function (el) {
     var texto = (el.innerText || el.textContent || '').toLowerCase();
 
     if (texto.includes('família gracher') || texto.includes('familia gracher')) {
-      if (el.tagName.toLowerCase() === 'a') {
-        el.setAttribute('href', './Guia_Gastronomico_Familia_Gracher.pdf');
-        el.setAttribute('target', '_blank');
-        el.setAttribute('rel', 'noopener noreferrer');
-        el.onclick = function(e) {
-          e.stopPropagation();
-          return true;
-        };
-      } else {
-        el.style.cursor = 'pointer';
-        el.onclick = function(e) {
-          if (e) {
-            e.preventDefault();
-            e.stopPropagation();
-          }
-          window.open('./Guia_Gastronomico_Familia_Gracher.pdf', '_blank');
-          return false;
-        };
-      }
+      el.href = './Guia_Gastronomico_Familia_Gracher.pdf';
+      el.target = '_blank';
+      el.rel = 'noopener noreferrer';
+      el.removeAttribute('onclick');
+    }
+
+    if (texto.includes('restaurantes favoritos')) {
+      el.href = 'restaurantes.html';
+      el.removeAttribute('target');
+      el.removeAttribute('rel');
+      el.removeAttribute('onclick');
+    }
+
+    if (texto.includes('melhores praias')) {
+      el.href = 'praias.html';
+      el.removeAttribute('target');
+      el.removeAttribute('rel');
+      el.removeAttribute('onclick');
+    }
+
+    if (texto.includes('passeios recomendados')) {
+      el.href = 'passeios.html';
+      el.removeAttribute('target');
+      el.removeAttribute('rel');
+      el.removeAttribute('onclick');
     }
   });
 });
