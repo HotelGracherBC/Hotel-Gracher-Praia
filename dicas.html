@@ -373,5 +373,27 @@ Descubre los mejores restaurantes, playas y atracciones para disfrutar al máxim
   </footer>
 
 </main>
+
+<script id="familia-gracher-pdf">
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('a,.menu-btn').forEach(function(el){
+    var t=(el.innerText||el.textContent||'').toLowerCase();
+    if(t.includes('dicas da família gracher')||t.includes('dicas da familia gracher')){
+      if(el.tagName.toLowerCase()==='a'){
+        el.href='Guia_Gastronomico_Familia_Gracher.pdf';
+        el.target='_blank';
+      }else{
+        el.style.cursor='pointer';
+        el.onclick=function(e){
+          e.preventDefault();
+          window.open('Guia_Gastronomico_Familia_Gracher.pdf','_blank');
+          return false;
+        };
+      }
+    }
+  });
+});
+</script>
+
 </body>
 </html>
